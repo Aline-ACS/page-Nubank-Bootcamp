@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    overflow-x: hidden ; 
+}
+
+$cor-roxo-bg: #530082;
+
+$cor-roxo: #8A05BE;
+
+$cor-cinza: rgb(25,25,25);
+
+$cor-roxo-claro: rgb(206, 106, 246);
+
+$padding-left: 60px;
+
+
+@mixin fonts ($tamanho, $negrito) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $tamanho;
+    font-weight: $negrito;
+}
+
+/* configuração header*/
+
+.botaoGrande {
+    background-color: $cor-roxo;
+    padding: 19px 32px;
+    &:hover {
+        background-color: $cor-roxo-claro;
+    }
+}
+
+.navegacao {
+    @include fonts (18px,0);
+}
+
+.roxo {
+    color:$cor-roxo;
+}
+
+.cinza {
+    color: rgba(17,17,17,0.7);
+}
+
+.roxoclaro {
+    color: $cor-roxo-claro;
+}
+
+header a:hover,
+footer a:hover {
+    color: $cor-roxo-claro;
+}
+
+/* fontes */
+
+.fonteGrande {
+
+    @include fonts (48px, 600);
+    letter-spacing: -0.05em;
+    line-height: 60px;
+}
+
+.fonteMedia {
+    @include fonts (24px, 0);
+    
+    margin-right: 80px;
+}
+
+.fontePequena {
+    @include fonts (18px, 500)
+    
+}
+
+/* mulher correndo */
+ 
+.caixa {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.celular1 {
+    padding-top: 300px;
+    padding-left: $padding-left;
+}
+
+
+.container1 {
+    padding-left: 150px;
+}
+
+/* celular fundo cinza*/
+
+.celular2 {
+    padding: 60px 0px;
+}
+
+.container2 {
+    padding-left: 50px;
+    margin-right: 120px;
+}
+
+/* mão */
+
+.mao {
+    width: 55%;
+    padding-top: 40px;
+    margin-left: 250px;;
+}
+
+.container3 {
+    padding-top: 80px;
+    padding-left: $padding-left;
+    margin-right: 100px;
+}
+
+/* celular roxo */
+
+.bg-roxo {
+   background-color: $cor-roxo-bg;
+}
+
+.celular3 {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 170px;
+    width: 95%;
+}
+
+.container4 {
+    padding-top: 200px;
+    padding-left: $padding-left;
+    margin-right: 150px;
+}
+
+/* imagens de fundo*/
+
+.caixa2 {
+    height: 100%;
+}
+
+.textoImagem {
+    padding-top: 150px;
+    padding-left: $padding-left;
+}
+
+/* configurações footer*/
+
+.bg-footer {
+    background-color: #111111;
+}
+
+.margemfooter {
+    margin-left: 80px;
+}
+
+.espacofooter {
+    padding-top: 172px;
+}
+
+.bordafooter {
+    border-top: 0.5px solid $cor-cinza;
+    border-bottom: 0.5px solid $cor-cinza;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
